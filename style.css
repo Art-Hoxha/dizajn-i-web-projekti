@@ -1,90 +1,53 @@
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav li a:hover {
-    background-color: #111;
-  }
-  
-  main {
-    margin: 20px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  form {
+    color: orange;
+    font-size: 40px;
+}
+
+.info{
+    text-align: center;
+    color: orange;
+}
+
+.text{
+    text-align: center;
+    font-size: 300%;
+}
+
+.prod{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="number"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
     text-align: center;
-  }
+}
+
+.produktet{
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titulli{
+    text-align: center;
+    font-size: 150%;
+}
+
+.prod > div {
+    flex: 0 0 48%;
+}
+.footer{
+    text-align: center;
+    justify-content: center;
+}
+.Lokacioni{
+    text-align: center;
+
+}

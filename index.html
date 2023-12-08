@@ -1,90 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Delivery Website</title>
-    <link rel="stylesheet" href="delivery website .css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Welcome to Orex Pizza </h1>
-      <p>Order online and enjoy our delicious food from the comfort of your home!</p>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address"><br><br>
-        <label for="food">Food:</label>
-        <select id="food" name="food">
-          <option value="pizza">Pizza</option>
-          <option value="burger">Burger</option>
-          <option value="sushi">Buke</option>
-          <option value="tacos">kroasant</option>
-        </select><br><br>
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
-        <button type="submit" value="Order Now" onclick="validate()"></button>
-      </form>
-    </main>
-    <footer>
-      <p>&copy; 2021 Delivery Website. All rights reserved.</p>
-    </footer>
-    <script>
-      function validate(){
-      var name = document.getElementById('name');
-      var email = document.getElementById('email');
-      var password = document.getElementById('password');
-      var adres = docuent.getElementById('adres');
-      
-      var nameregex =/^[a-zA-Z\s]$/;
-      if (!nameregex.test(name.value)){
-          alert('Please enter a valid name.');
-          return  ;
-      }
-      var emailregex =/^[^\s@]+@[^\s@]+\.[^\s@]$/;
-      if (!emailregex.test(email.value)){
-          alert('Please enter a valid email')
-          return false;
-      
-      }
-       var passwordregex =/^[a-zA-Z][3,8]$/;
-      if (!passwordregex.test(password.value)){
-          ('Pleas enter a valid password');
-          return false;
-      }
-      
-      var adresregex =/[a-z]$/;
-      if (!adresregex.test(adres.value)){
-          ('Please enter a valid adres')
-          return false;
-      }
-      
-      
-      
-      }
-      </script>
+<html lang="en">
+<head>
+    
+    <title>Orex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="header">
+        <p> Orex Pizza</p>
+    </div>
+<hr>
+    <div class="info">
+        <p>Jemi me lokacion ne Prizren</p>
+        <p>Mund te na kontaktoni ne numrin e telefonit:</p>
+        <p>044111222</p>
+        <p>Hapur 24 Ore</p>
+    </div>
+<hr>
+    <div class="text" style="background-color: orange;">
+        <p>Produktet qe ne ofrojme</p>
+    </div>
 
- 
- 
-`;
+    <div class="prod">
+        <div>
+        <img class="produktet" src="images/margarita.jpg">
+        <div class="titulli">Pizza Margarita</div>
+        <p>2€</p>
+        </div>
+        <div>
+        <img class="produktet" src="images/Bismark-Pizza.jpg">
+        <div class="titulli">Pizza Bismark </div>
+        <p>4€</p>        
+        </div>
+        <div>
+        <img class="produktet" src="images/Brooklyn-Style-Pizza.jpg">
+        <div class="titulli">Pizza Brooklyn </div>
+        <p>5€</p>
+        </div>
+        <div>
+        <img class="produktet" src="images/Buffalo-Style-Pizza-types-of-pizzas.jpg">
+        <div class="titulli">Pizza Buffalo </div>
+        <p>4.5€</p>
+        </div>
+        <div>
+            <img class="produktet" src="images/Supreme PIZZA.jpg">
+            <div class="titulli">Pizza Supreme </div>
+            <p>6€</p>
+        </div>
+        <div>
+            <img class="produktet" src="images/Neapolitan PIZZA.jpg">
+            <div class="titulli">Pizza Neapolitan </div>
+            <p>3€</p>
+        </div>
+        <div>
+            <img class="produktet" src="images/Healthy.jpg">
+            <div class="titulli">Pizza Healthy </div>
+            <p>4.5€</p>
+        </div>
+        <div>
+            <img class="produktet" src="images/Chicken.jpg">
+            <div class="titulli">Pizza Chicken </div>
+            <p>6€</p>
+        </div>
 
 
 
 
 
 
-  </body>
+
+    </div>
+
+
+
+
+<footer>
+    <div class="footer">
+    <h5>Kontakti</h5>
+    <p>Mund te na kontaktoni ne numrin e dhene ne viber ose whatsapp.Per ndonje pakenaqesi tuajen.<br>Ju lutem na kontaktoni qe te permirsojme gabimet tona.</p>
+    </div>
+    <div class="Lokacioni" >
+        <P>Lokacioni.<br>Rruga De Rada.Prizren</P>
+    </div>
+</footer>
+
+
+
+
+
+</body>
 </html>
