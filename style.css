@@ -1,53 +1,84 @@
-body{
+/* Resetting some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting a base font family for the entire page */
+body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 253, 253);
 }
 
-.header{
+/* Header styling */
+.header {
     text-align: center;
-    color: orange;
+    background-color: rgb(31, 31, 30);
+    color: rgb(253, 253, 251);
     font-size: 40px;
+    padding: 10px 0; /* Adding padding for better spacing */
+}
+.header img {
+    max-width: 180px; /* Set the maximum width */
+    max-height: 180px; /* Adjust the margin as needed */
+    
 }
 
-.info{
+/* General information styling */
+.info {
     text-align: center;
     color: orange;
+    margin-bottom: 20px; /* Adding margin for better spacing */
 }
 
-.text{
+/* Main text styling */
+.text H1 {
+    color: black;
     text-align: center;
-    font-size: 300%;
+    font-size: 200%;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px black;
+
 }
 
-.prod{
+/* Product container styling */
+.prod {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     justify-content: center;
-    text-align: center;
 }
 
-.produktet{
-    width: 400px;
-    height: 300px;
-    margin: 50px;
-    border:1px solid #ddd;
+/* Individual product styling */
+.produktet {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #a1a1a1;
     border-radius: 8px;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.titulli{
+/* Product title styling */
+.titulli {
     text-align: center;
     font-size: 150%;
+    margin-top: 10px; /* Adding margin for better spacing */
 }
 
-.prod > div {
-    flex: 0 0 48%;
-}
-.footer{
+/* Footer styling */
+.footer {
     text-align: center;
-    justify-content: center;
+    padding: 20px 0; /* Adding padding for better spacing */
 }
-.Lokacioni{
-    text-align: center;
 
+/* Location information styling */
+.Lokacioni {
+    text-align: center;
+    margin-top: 20px; /* Adding margin for better spacing */
 }
+
