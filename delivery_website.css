@@ -49,17 +49,8 @@ header {
   
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
+  input[type="password"],
   select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="number"] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
